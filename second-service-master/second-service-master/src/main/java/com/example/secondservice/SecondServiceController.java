@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/second-service")
 public class SecondServiceController {
 
+    @GetMapping("/")
+    public String mainpage(){
+        return "second service main page";
+    }
+
     @GetMapping("/welcome")
     public String welcome() {
         return "Welcome to the Second service.";
